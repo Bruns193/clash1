@@ -5,139 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK-5|专线|1x, server: hkzx.vmess.top, port: 38124, type: vmess, uuid: 9d958232-6986-4c23-92a1-64c1947dd95c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /manage, ws-headers: {Host: hkzx.vmess.top}, udp: true}
-  - {name: 日本01 ➤ 高速 ➤ x1, server: shbgp.gia.wiki, port: 10014, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shbgp.gia.wiki}, udp: true}
-  - {name: 日本(youtube阿伟科技), server: shbgp.gia.wiki, port: 10014, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 韩国 ➤ 高速 ➤ x1, server: shbgp.gia.wiki, port: 10024, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shbgp.gia.wiki}, udp: true}
-  - {name: 美国(youtube阿伟科技), server: 3.v2yun.vip, port: 80, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 日本(youtube阿伟科技) 2, server: shbgp.gia.wiki, port: 10024, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1, server: 3.v2yun.vip, port: 80, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 3.v2yun.vip}, udp: true}
-  - {name: 美国費利蒙, server: us.iplc.sbs, port: 21102, type: ss, cipher: chacha20-ietf-poly1305, password: 733e4766-140e-41fa-b500-c4ffbf4db3f2, udp: true}
-  - {name: US-4|专线|1x, server: uszx.vmess.top, port: 37123, type: vmess, uuid: 9d958232-6986-4c23-92a1-64c1947dd95c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: uszx.vmess.top}, udp: true}
-  - {name: 香港 ➤ 独享 ➤ x1, server: hkdx.v2yun.vip, port: 80, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkdx.v2yun.vip}, udp: true}
-  - {name: US-2|专线|1x, server: uszx.vmess.top, port: 37121, type: vmess, uuid: 9d958232-6986-4c23-92a1-64c1947dd95c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /clientarea, ws-headers: {Host: uszx.vmess.top}, udp: true}
-  - {name: 香港(youtube阿伟科技), server: hk01gs.v2yun.vip, port: 80, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 美国(youtube阿伟科技) 2, server: hkdx.v2yun.vip, port: 80, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 日本东京, server: jp.iplc.skin, port: 11104, type: vmess, uuid: 733e4766-140e-41fa-b500-c4ffbf4db3f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp.iplc.skin}, udp: true}
-  - {name: 美国(youtube阿伟科技) 3, server: 3.v2yun.vip, port: 8080, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1, server: 3.v2yun.vip, port: 8080, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 3.v2yun.vip}, udp: true}
-  - {name: 新加坡(youtube阿伟科技), server: sg1.ipv6b.my.id, port: 443, type: vmess, uuid: f4f7252a-7100-48e7-a2e5-b0334e845c06, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /fastssh/73qdrc9jprtduwhvwtkvjrrvz39gr3/627f61f24960e/, ws-headers: {Host: sg1.ipv6b.my.id}, udp: true}
-  - {name: 日本(youtube阿伟科技) 3, server: in04.dns2333.xyz, port: 63086, type: vmess, uuid: 26cda94e-fb7a-3ce3-9cca-d110505ad8be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 香港01 ➤ 高速 ➤ x1, server: hk01gs.v2yun.vip, port: 80, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: gd.189.cn}, udp: true}
-  - {name: 日本(youtube阿伟科技) 4, server: jp.iplc.skin, port: 11104, type: vmess, uuid: 733e4766-140e-41fa-b500-c4ffbf4db3f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 爱尔兰(youtube阿伟科技), server: 34.245.30.120, port: 25465, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
-  - {name: 爱尔兰(youtube阿伟科技) 2, server: 52.19.134.236, port: 23456, type: ss, cipher: chacha20-ietf-poly1305, password: 54df1ad5-1323-4dd7-b7a1-a53202347526, udp: true}
-  - {name: 香港(youtube阿伟科技) 2, server: gzbgp.gia.wiki, port: 30443, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 马来西亚(youtube阿伟科技), server: gzbgp.gia.wiki, port: 30446, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 台湾(youtube阿伟科技), server: in04.dns2333.xyz, port: 63088, type: vmess, uuid: 26cda94e-fb7a-3ce3-9cca-d110505ad8be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: tw-balancer.myn1des.com}, udp: true}
-  - {name: HK-4|专线|1x, server: hkzx.vmess.top, port: 38123, type: vmess, uuid: 9d958232-6986-4c23-92a1-64c1947dd95c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /manage, ws-headers: {Host: hkzx.vmess.top}, udp: true}
-  - {name: 澳大利亚墨尔本 | 贰 | StarTripFree, server: yas2.brightyun.xyz, port: 10087, type: vmess, uuid: 6b5296ba-9e5b-3835-b35c-8d4c51e61a48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(youtube阿伟科技) 2, server: gzbgp.gia.wiki, port: 30107, type: vmess, uuid: 3d1c98ec-a341-3006-8110-be7c3ffaeba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: 美国奥格登, server: us.iplc.skin, port: 11102, type: vmess, uuid: 733e4766-140e-41fa-b500-c4ffbf4db3f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us.iplc.skin}, udp: true}
+  - {name: Japan 04, server: shcm.shanjun.me, port: 54706, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, sni: shcm.shanjun.me, skip-cert-verify: true, udp: true}
+  - {name: 日本 | 公益 | 0.8x, server: zgy.zz8.shop, port: 40107, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: zgy.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 韩国 | 公益 | 0.8x, server: zgy.zz8.shop, port: 40535, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: zgy.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 | 公益 | 0.8x, server: zgy.zz8.shop, port: 40889, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: zgy.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国B | 公益 | 0.5x, server: us01.zzk8.me, port: 40075, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: us01.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 美国A | 公益 | 0.5x, server: uska.zzk8.me, port: 40072, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uska.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 | 公益 | 0.2x, server: ru.zzk8.me, port: 40086, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: ru.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 美国 | 壹 | StarTripFree, server: yas1.brightyun.xyz, port: 10087, type: vmess, uuid: 6b5296ba-9e5b-3835-b35c-8d4c51e61a48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: United States 02, server: 45.137.97.205, port: 443, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 | 叁 | StarTripFree, server: as4.brightyun.xyz, port: 443, type: vmess, uuid: 6b5296ba-9e5b-3835-b35c-8d4c51e61a48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: as4.brightyun.xyz}, udp: true}
+  - {name: 波兰 | 公益 | 0.2x, server: bl.zzk8.me, port: 40555, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: bl.zzk8.me, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-5|专线|1x
-      - 日本01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技)
-      - 韩国 ➤ 高速 ➤ x1
-      - 美国(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 美国費利蒙
-      - US-4|专线|1x
-      - 香港 ➤ 独享 ➤ x1
-      - US-2|专线|1x
-      - 香港(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 日本东京
-      - 美国(youtube阿伟科技) 3
-      - 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 新加坡(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 3
-      - 香港01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技) 4
-      - 爱尔兰(youtube阿伟科技)
-      - 爱尔兰(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 2
-      - 马来西亚(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
-      - HK-4|专线|1x
-      - 澳大利亚墨尔本 | 贰 | StarTripFree
-      - 新加坡(youtube阿伟科技) 2
-      - 美国奥格登
+      - Japan 04
+      - 日本 | 公益 | 0.8x
+      - 韩国 | 公益 | 0.8x
+      - 新加坡 | 公益 | 0.8x
+      - 美国B | 公益 | 0.5x
+      - 美国A | 公益 | 0.5x
+      - 俄罗斯 | 公益 | 0.2x
+      - 美国 | 壹 | StarTripFree
+      - United States 02
+      - 澳大利亚 | 叁 | StarTripFree
+      - 波兰 | 公益 | 0.2x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - HK-5|专线|1x
-      - 日本01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技)
-      - 韩国 ➤ 高速 ➤ x1
-      - 美国(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 美国費利蒙
-      - US-4|专线|1x
-      - 香港 ➤ 独享 ➤ x1
-      - US-2|专线|1x
-      - 香港(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 日本东京
-      - 美国(youtube阿伟科技) 3
-      - 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 新加坡(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 3
-      - 香港01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技) 4
-      - 爱尔兰(youtube阿伟科技)
-      - 爱尔兰(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 2
-      - 马来西亚(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
-      - HK-4|专线|1x
-      - 澳大利亚墨尔本 | 贰 | StarTripFree
-      - 新加坡(youtube阿伟科技) 2
-      - 美国奥格登
+      - Japan 04
+      - 日本 | 公益 | 0.8x
+      - 韩国 | 公益 | 0.8x
+      - 新加坡 | 公益 | 0.8x
+      - 美国B | 公益 | 0.5x
+      - 美国A | 公益 | 0.5x
+      - 俄罗斯 | 公益 | 0.2x
+      - 美国 | 壹 | StarTripFree
+      - United States 02
+      - 澳大利亚 | 叁 | StarTripFree
+      - 波兰 | 公益 | 0.2x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-5|专线|1x
-      - 日本01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技)
-      - 韩国 ➤ 高速 ➤ x1
-      - 美国(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 美国費利蒙
-      - US-4|专线|1x
-      - 香港 ➤ 独享 ➤ x1
-      - US-2|专线|1x
-      - 香港(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 日本东京
-      - 美国(youtube阿伟科技) 3
-      - 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 新加坡(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 3
-      - 香港01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技) 4
-      - 爱尔兰(youtube阿伟科技)
-      - 爱尔兰(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 2
-      - 马来西亚(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
-      - HK-4|专线|1x
-      - 澳大利亚墨尔本 | 贰 | StarTripFree
-      - 新加坡(youtube阿伟科技) 2
-      - 美国奥格登
+      - Japan 04
+      - 日本 | 公益 | 0.8x
+      - 韩国 | 公益 | 0.8x
+      - 新加坡 | 公益 | 0.8x
+      - 美国B | 公益 | 0.5x
+      - 美国A | 公益 | 0.5x
+      - 俄罗斯 | 公益 | 0.2x
+      - 美国 | 壹 | StarTripFree
+      - United States 02
+      - 澳大利亚 | 叁 | StarTripFree
+      - 波兰 | 公益 | 0.2x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -156,149 +84,71 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK-5|专线|1x
-      - 日本01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技)
-      - 韩国 ➤ 高速 ➤ x1
-      - 美国(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 美国費利蒙
-      - US-4|专线|1x
-      - 香港 ➤ 独享 ➤ x1
-      - US-2|专线|1x
-      - 香港(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 日本东京
-      - 美国(youtube阿伟科技) 3
-      - 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 新加坡(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 3
-      - 香港01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技) 4
-      - 爱尔兰(youtube阿伟科技)
-      - 爱尔兰(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 2
-      - 马来西亚(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
-      - HK-4|专线|1x
-      - 澳大利亚墨尔本 | 贰 | StarTripFree
-      - 新加坡(youtube阿伟科技) 2
-      - 美国奥格登
+      - Japan 04
+      - 日本 | 公益 | 0.8x
+      - 韩国 | 公益 | 0.8x
+      - 新加坡 | 公益 | 0.8x
+      - 美国B | 公益 | 0.5x
+      - 美国A | 公益 | 0.5x
+      - 俄罗斯 | 公益 | 0.2x
+      - 美国 | 壹 | StarTripFree
+      - United States 02
+      - 澳大利亚 | 叁 | StarTripFree
+      - 波兰 | 公益 | 0.2x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 香港 ➤ 独享 ➤ x1
-      - 香港(youtube阿伟科技)
-      - 香港01 ➤ 高速 ➤ x1
-      - 香港(youtube阿伟科技) 2
-      - 台湾(youtube阿伟科技)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - HK-5|专线|1x
-      - 日本01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技)
-      - 韩国 ➤ 高速 ➤ x1
-      - 美国(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 美国費利蒙
-      - US-4|专线|1x
-      - 香港 ➤ 独享 ➤ x1
-      - US-2|专线|1x
-      - 香港(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 日本东京
-      - 美国(youtube阿伟科技) 3
-      - 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 新加坡(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 3
-      - 香港01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技) 4
-      - 爱尔兰(youtube阿伟科技)
-      - 爱尔兰(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 2
-      - 马来西亚(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
-      - HK-4|专线|1x
-      - 澳大利亚墨尔本 | 贰 | StarTripFree
-      - 新加坡(youtube阿伟科技) 2
-      - 美国奥格登
+      - Japan 04
+      - 日本 | 公益 | 0.8x
+      - 韩国 | 公益 | 0.8x
+      - 新加坡 | 公益 | 0.8x
+      - 美国B | 公益 | 0.5x
+      - 美国A | 公益 | 0.5x
+      - 俄罗斯 | 公益 | 0.2x
+      - 美国 | 壹 | StarTripFree
+      - United States 02
+      - 澳大利亚 | 叁 | StarTripFree
+      - 波兰 | 公益 | 0.2x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - HK-5|专线|1x
-      - 日本01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技)
-      - 韩国 ➤ 高速 ➤ x1
-      - 美国(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 美国費利蒙
-      - US-4|专线|1x
-      - 香港 ➤ 独享 ➤ x1
-      - US-2|专线|1x
-      - 香港(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 日本东京
-      - 美国(youtube阿伟科技) 3
-      - 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 新加坡(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 3
-      - 香港01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技) 4
-      - 爱尔兰(youtube阿伟科技)
-      - 爱尔兰(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 2
-      - 马来西亚(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
-      - HK-4|专线|1x
-      - 澳大利亚墨尔本 | 贰 | StarTripFree
-      - 新加坡(youtube阿伟科技) 2
-      - 美国奥格登
+      - Japan 04
+      - 日本 | 公益 | 0.8x
+      - 韩国 | 公益 | 0.8x
+      - 新加坡 | 公益 | 0.8x
+      - 美国B | 公益 | 0.5x
+      - 美国A | 公益 | 0.5x
+      - 俄罗斯 | 公益 | 0.2x
+      - 美国 | 壹 | StarTripFree
+      - United States 02
+      - 澳大利亚 | 叁 | StarTripFree
+      - 波兰 | 公益 | 0.2x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-5|专线|1x
-      - 日本01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技)
-      - 韩国 ➤ 高速 ➤ x1
-      - 美国(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 美国費利蒙
-      - US-4|专线|1x
-      - 香港 ➤ 独享 ➤ x1
-      - US-2|专线|1x
-      - 香港(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 日本东京
-      - 美国(youtube阿伟科技) 3
-      - 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 新加坡(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 3
-      - 香港01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技) 4
-      - 爱尔兰(youtube阿伟科技)
-      - 爱尔兰(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 2
-      - 马来西亚(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
-      - HK-4|专线|1x
-      - 澳大利亚墨尔本 | 贰 | StarTripFree
-      - 新加坡(youtube阿伟科技) 2
-      - 美国奥格登
+      - Japan 04
+      - 日本 | 公益 | 0.8x
+      - 韩国 | 公益 | 0.8x
+      - 新加坡 | 公益 | 0.8x
+      - 美国B | 公益 | 0.5x
+      - 美国A | 公益 | 0.5x
+      - 俄罗斯 | 公益 | 0.2x
+      - 美国 | 壹 | StarTripFree
+      - United States 02
+      - 澳大利亚 | 叁 | StarTripFree
+      - 波兰 | 公益 | 0.2x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -314,35 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK-5|专线|1x
-      - 日本01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技)
-      - 韩国 ➤ 高速 ➤ x1
-      - 美国(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 香港dmit线路 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 美国費利蒙
-      - US-4|专线|1x
-      - 香港 ➤ 独享 ➤ x1
-      - US-2|专线|1x
-      - 香港(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 日本东京
-      - 美国(youtube阿伟科技) 3
-      - 美国洛杉矶 ➤ 原生ip解锁Netflix等流媒体 ➤ x1
-      - 新加坡(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 3
-      - 香港01 ➤ 高速 ➤ x1
-      - 日本(youtube阿伟科技) 4
-      - 爱尔兰(youtube阿伟科技)
-      - 爱尔兰(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 2
-      - 马来西亚(youtube阿伟科技)
-      - 台湾(youtube阿伟科技)
-      - HK-4|专线|1x
-      - 澳大利亚墨尔本 | 贰 | StarTripFree
-      - 新加坡(youtube阿伟科技) 2
-      - 美国奥格登
+      - Japan 04
+      - 日本 | 公益 | 0.8x
+      - 韩国 | 公益 | 0.8x
+      - 新加坡 | 公益 | 0.8x
+      - 美国B | 公益 | 0.5x
+      - 美国A | 公益 | 0.5x
+      - 俄罗斯 | 公益 | 0.2x
+      - 美国 | 壹 | StarTripFree
+      - United States 02
+      - 澳大利亚 | 叁 | StarTripFree
+      - 波兰 | 公益 | 0.2x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
