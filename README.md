@@ -6,16 +6,14 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: Japan 04, server: shcm.shanjun.me, port: 54706, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, sni: shcm.shanjun.me, skip-cert-verify: true, udp: true}
-  - {name: 日本 | 公益 | 0.8x, server: zgy.zz8.shop, port: 40107, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: zgy.zz8.shop, skip-cert-verify: true, udp: true}
-  - {name: 韩国 | 公益 | 0.8x, server: zgy.zz8.shop, port: 40535, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: zgy.zz8.shop, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 | 公益 | 0.8x, server: zgy.zz8.shop, port: 40889, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: zgy.zz8.shop, skip-cert-verify: true, udp: true}
-  - {name: 美国B | 公益 | 0.5x, server: us01.zzk8.me, port: 40075, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: us01.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 美国A | 公益 | 0.5x, server: uska.zzk8.me, port: 40072, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uska.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 | 公益 | 0.2x, server: ru.zzk8.me, port: 40086, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: ru.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 美国 | 壹 | StarTripFree, server: yas1.brightyun.xyz, port: 10087, type: vmess, uuid: 6b5296ba-9e5b-3835-b35c-8d4c51e61a48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: "[0.4x-3x]🇯🇵 广港|Misaka", server: 36.139.154.162, port: 45209, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
+  - {name: "[0.4x-3x]🇭🇰 广港|Misaka", server: 36.139.154.162, port: 45210, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
+  - {name: "[0.7x-2x]🇸🇬 广港|Misaka", server: 36.139.154.162, port: 59168, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
+  - {name: 香港 | 1.5x, server: zgy.zz8.shop, port: 49882, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: zgy.zz8.shop, skip-cert-verify: true, udp: true}
   - {name: United States 02, server: 45.137.97.205, port: 443, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 | 叁 | StarTripFree, server: as4.brightyun.xyz, port: 443, type: vmess, uuid: 6b5296ba-9e5b-3835-b35c-8d4c51e61a48, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: as4.brightyun.xyz}, udp: true}
-  - {name: 波兰 | 公益 | 0.2x, server: bl.zzk8.me, port: 40555, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: bl.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 | 直连 | 1x, server: nl.zzk8.me, port: 43996, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: nl.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 悉尼 | 直连 | 1x, server: au.zzk8.me, port: 41269, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: au.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 美国C | 直连 | 1x, server: us2.zzk8.me, port: 40051, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: us2.zzk8.me, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -23,32 +21,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 04
-      - 日本 | 公益 | 0.8x
-      - 韩国 | 公益 | 0.8x
-      - 新加坡 | 公益 | 0.8x
-      - 美国B | 公益 | 0.5x
-      - 美国A | 公益 | 0.5x
-      - 俄罗斯 | 公益 | 0.2x
-      - 美国 | 壹 | StarTripFree
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - United States 02
-      - 澳大利亚 | 叁 | StarTripFree
-      - 波兰 | 公益 | 0.2x
+      - 荷兰 | 直连 | 1x
+      - 悉尼 | 直连 | 1x
+      - 美国C | 直连 | 1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - Japan 04
-      - 日本 | 公益 | 0.8x
-      - 韩国 | 公益 | 0.8x
-      - 新加坡 | 公益 | 0.8x
-      - 美国B | 公益 | 0.5x
-      - 美国A | 公益 | 0.5x
-      - 俄罗斯 | 公益 | 0.2x
-      - 美国 | 壹 | StarTripFree
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - United States 02
-      - 澳大利亚 | 叁 | StarTripFree
-      - 波兰 | 公益 | 0.2x
+      - 荷兰 | 直连 | 1x
+      - 悉尼 | 直连 | 1x
+      - 美国C | 直连 | 1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -56,16 +50,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 04
-      - 日本 | 公益 | 0.8x
-      - 韩国 | 公益 | 0.8x
-      - 新加坡 | 公益 | 0.8x
-      - 美国B | 公益 | 0.5x
-      - 美国A | 公益 | 0.5x
-      - 俄罗斯 | 公益 | 0.2x
-      - 美国 | 壹 | StarTripFree
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - United States 02
-      - 澳大利亚 | 叁 | StarTripFree
-      - 波兰 | 公益 | 0.2x
+      - 荷兰 | 直连 | 1x
+      - 悉尼 | 直连 | 1x
+      - 美国C | 直连 | 1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -85,20 +77,22 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 04
-      - 日本 | 公益 | 0.8x
-      - 韩国 | 公益 | 0.8x
-      - 新加坡 | 公益 | 0.8x
-      - 美国B | 公益 | 0.5x
-      - 美国A | 公益 | 0.5x
-      - 俄罗斯 | 公益 | 0.2x
-      - 美国 | 壹 | StarTripFree
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - United States 02
-      - 澳大利亚 | 叁 | StarTripFree
-      - 波兰 | 公益 | 0.2x
+      - 荷兰 | 直连 | 1x
+      - 悉尼 | 直连 | 1x
+      - 美国C | 直连 | 1x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -106,32 +100,28 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - Japan 04
-      - 日本 | 公益 | 0.8x
-      - 韩国 | 公益 | 0.8x
-      - 新加坡 | 公益 | 0.8x
-      - 美国B | 公益 | 0.5x
-      - 美国A | 公益 | 0.5x
-      - 俄罗斯 | 公益 | 0.2x
-      - 美国 | 壹 | StarTripFree
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - United States 02
-      - 澳大利亚 | 叁 | StarTripFree
-      - 波兰 | 公益 | 0.2x
+      - 荷兰 | 直连 | 1x
+      - 悉尼 | 直连 | 1x
+      - 美国C | 直连 | 1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - Japan 04
-      - 日本 | 公益 | 0.8x
-      - 韩国 | 公益 | 0.8x
-      - 新加坡 | 公益 | 0.8x
-      - 美国B | 公益 | 0.5x
-      - 美国A | 公益 | 0.5x
-      - 俄罗斯 | 公益 | 0.2x
-      - 美国 | 壹 | StarTripFree
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - United States 02
-      - 澳大利亚 | 叁 | StarTripFree
-      - 波兰 | 公益 | 0.2x
+      - 荷兰 | 直连 | 1x
+      - 悉尼 | 直连 | 1x
+      - 美国C | 直连 | 1x
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -139,16 +129,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Japan 04
-      - 日本 | 公益 | 0.8x
-      - 韩国 | 公益 | 0.8x
-      - 新加坡 | 公益 | 0.8x
-      - 美国B | 公益 | 0.5x
-      - 美国A | 公益 | 0.5x
-      - 俄罗斯 | 公益 | 0.2x
-      - 美国 | 壹 | StarTripFree
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - United States 02
-      - 澳大利亚 | 叁 | StarTripFree
-      - 波兰 | 公益 | 0.2x
+      - 荷兰 | 直连 | 1x
+      - 悉尼 | 直连 | 1x
+      - 美国C | 直连 | 1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,16 +153,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Japan 04
-      - 日本 | 公益 | 0.8x
-      - 韩国 | 公益 | 0.8x
-      - 新加坡 | 公益 | 0.8x
-      - 美国B | 公益 | 0.5x
-      - 美国A | 公益 | 0.5x
-      - 俄罗斯 | 公益 | 0.2x
-      - 美国 | 壹 | StarTripFree
+      - "[0.4x-3x]🇯🇵 广港|Misaka"
+      - "[0.4x-3x]🇭🇰 广港|Misaka"
+      - "[0.7x-2x]🇸🇬 广港|Misaka"
+      - 香港 | 1.5x
       - United States 02
-      - 澳大利亚 | 叁 | StarTripFree
-      - 波兰 | 公益 | 0.2x
+      - 荷兰 | 直连 | 1x
+      - 悉尼 | 直连 | 1x
+      - 美国C | 直连 | 1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
