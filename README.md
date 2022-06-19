@@ -6,14 +6,14 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: Japan 04, server: shcm.shanjun.me, port: 54706, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, sni: shcm.shanjun.me, skip-cert-verify: true, udp: true}
+  - {name: "[0.7x-3x]🇸🇬 广港|Misaka", server: azbj01.986888.xyz, port: 11026, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
   - {name: "[0.4x-3x]🇯🇵 广港|Misaka", server: 36.139.154.162, port: 45209, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
-  - {name: "[0.4x-3x]🇭🇰 广港|Misaka", server: 36.139.154.162, port: 45210, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
-  - {name: "[0.7x-2x]🇸🇬 广港|Misaka", server: 36.139.154.162, port: 59168, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
-  - {name: 香港 | 1.5x, server: zgy.zz8.shop, port: 49882, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: zgy.zz8.shop, skip-cert-verify: true, udp: true}
-  - {name: United States 02, server: 45.137.97.205, port: 443, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, skip-cert-verify: true, udp: true}
-  - {name: 荷兰 | 直连 | 1x, server: nl.zzk8.me, port: 43996, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: nl.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 悉尼 | 直连 | 1x, server: au.zzk8.me, port: 41269, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: au.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 美国C | 直连 | 1x, server: us2.zzk8.me, port: 40051, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: us2.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: "[0.4x-5x]🇭🇰 广港|Misaka", server: 36.139.154.162, port: 45210, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
+  - {name: "[1x-3x]🇨🇳 京港|Hinet", server: azbj01.986888.xyz, port: 42868, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
+  - {name: 日本 | 直连 | 1x, server: jpli.zzk8.me, port: 40108, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: jpli.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: "[0.5x-3x]🇺🇸 广港|Misaka", server: 36.139.154.162, port: 51411, type: ss, cipher: aes-128-gcm, password: b39bf8a1-72a2-4cd6-bb20-32376119e639, udp: true}
+  - {name: 新加坡 | 直连 | 1x, server: sg.zzk8.me, port: 43445, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: sg.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 美国A | 直连 | 0.5x, server: uska.zzk8.me, port: 40072, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uska.zzk8.me, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -21,28 +21,28 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 04
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
-      - United States 02
-      - 荷兰 | 直连 | 1x
-      - 悉尼 | 直连 | 1x
-      - 美国C | 直连 | 1x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - 日本 | 直连 | 1x
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
+      - 新加坡 | 直连 | 1x
+      - 美国A | 直连 | 0.5x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - Japan 04
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
-      - United States 02
-      - 荷兰 | 直连 | 1x
-      - 悉尼 | 直连 | 1x
-      - 美国C | 直连 | 1x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - 日本 | 直连 | 1x
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
+      - 新加坡 | 直连 | 1x
+      - 美国A | 直连 | 0.5x
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -50,14 +50,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 04
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
-      - United States 02
-      - 荷兰 | 直连 | 1x
-      - 悉尼 | 直连 | 1x
-      - 美国C | 直连 | 1x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - 日本 | 直连 | 1x
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
+      - 新加坡 | 直连 | 1x
+      - 美国A | 直连 | 0.5x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -77,22 +77,23 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - Japan 04
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
-      - United States 02
-      - 荷兰 | 直连 | 1x
-      - 悉尼 | 直连 | 1x
-      - 美国C | 直连 | 1x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - 日本 | 直连 | 1x
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
+      - 新加坡 | 直连 | 1x
+      - 美国A | 直连 | 0.5x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -100,28 +101,28 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - Japan 04
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
-      - United States 02
-      - 荷兰 | 直连 | 1x
-      - 悉尼 | 直连 | 1x
-      - 美国C | 直连 | 1x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - 日本 | 直连 | 1x
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
+      - 新加坡 | 直连 | 1x
+      - 美国A | 直连 | 0.5x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - Japan 04
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
-      - United States 02
-      - 荷兰 | 直连 | 1x
-      - 悉尼 | 直连 | 1x
-      - 美国C | 直连 | 1x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - 日本 | 直连 | 1x
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
+      - 新加坡 | 直连 | 1x
+      - 美国A | 直连 | 0.5x
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -129,14 +130,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Japan 04
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
-      - United States 02
-      - 荷兰 | 直连 | 1x
-      - 悉尼 | 直连 | 1x
-      - 美国C | 直连 | 1x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - 日本 | 直连 | 1x
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
+      - 新加坡 | 直连 | 1x
+      - 美国A | 直连 | 0.5x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -153,14 +154,14 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - Japan 04
+      - "[0.7x-3x]🇸🇬 广港|Misaka"
       - "[0.4x-3x]🇯🇵 广港|Misaka"
-      - "[0.4x-3x]🇭🇰 广港|Misaka"
-      - "[0.7x-2x]🇸🇬 广港|Misaka"
-      - 香港 | 1.5x
-      - United States 02
-      - 荷兰 | 直连 | 1x
-      - 悉尼 | 直连 | 1x
-      - 美国C | 直连 | 1x
+      - "[0.4x-5x]🇭🇰 广港|Misaka"
+      - "[1x-3x]🇨🇳 京港|Hinet"
+      - 日本 | 直连 | 1x
+      - "[0.5x-3x]🇺🇸 广港|Misaka"
+      - 新加坡 | 直连 | 1x
+      - 美国A | 直连 | 0.5x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
