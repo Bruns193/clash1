@@ -5,67 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本 | 直连 | 1x, server: jpli.zzk8.me, port: 40108, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: jpli.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 新加坡B | 直连 | 1x, server: sgaws.zzk8.me, port: 43455, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: sgaws.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 新加坡A | 直连 | 1x, server: sg.zzk8.me, port: 43445, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: sg.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 美国A | 直连 | 0.5x, server: uska.zzk8.me, port: 40072, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uska.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 日本 | 标准 | 1.5x, server: std.zz8.shop, port: 59813, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国C | 标准 | 1x, server: std.zz8.shop, port: 59818, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 新加坡B | 标准 | 1.5x, server: std.zz8.shop, port: 59815, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 新加坡A | 标准 | 1.5x, server: std.zz8.shop, port: 59814, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 香港B | 标准 | 1.5x, server: std.zz8.shop, port: 59812, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: Japan 04, server: shcm.shanjun.me, port: 54706, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, sni: shcm.shanjun.me, skip-cert-verify: true, udp: true}
+  - {name: 香港A | 标准 | 1.5x, server: std.zz8.shop, port: 59811, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国B | 标准 | 1x, server: std.zz8.shop, port: 59817, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 | 标准 | 1x, server: std.zz8.shop, port: 59819, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国A | 标准 | 1x, server: std.zz8.shop, port: 59816, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 | 标准 | 1x, server: std.zz8.shop, port: 59820, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
   - {name: United States 02, server: 45.137.97.205, port: 443, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, skip-cert-verify: true, udp: true}
-  - {name: 荷兰B | 直连 | 0.5x, server: nla.zzk8.me, port: 43998, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: nla.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 悉尼 | 直连 | 1x, server: au.zzk8.me, port: 41269, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: au.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 美国B | 直连 | 0.5x, server: uslsj.zzk8.me, port: 41166, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uslsj.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 节点失效请更新订阅, server: uslsj.zzk8.me, port: 41166, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uslsj.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰 | 直连 | 0.5x, server: ua.zzk8.me, port: 42086, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: ua.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 荷兰A | 直连 | 1x, server: nl.zzk8.me, port: 43996, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: nl.zzk8.me, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 | 直连 | 1x
-      - 新加坡B | 直连 | 1x
-      - 新加坡A | 直连 | 1x
-      - 美国A | 直连 | 0.5x
+      - 日本 | 标准 | 1.5x
+      - 美国C | 标准 | 1x
+      - 新加坡B | 标准 | 1.5x
+      - 新加坡A | 标准 | 1.5x
+      - 香港B | 标准 | 1.5x
+      - Japan 04
+      - 香港A | 标准 | 1.5x
+      - 美国B | 标准 | 1x
+      - 荷兰 | 标准 | 1x
+      - 美国A | 标准 | 1x
+      - 俄罗斯 | 标准 | 1x
       - United States 02
-      - 荷兰B | 直连 | 0.5x
-      - 悉尼 | 直连 | 1x
-      - 美国B | 直连 | 0.5x
-      - 节点失效请更新订阅
-      - 乌克兰 | 直连 | 0.5x
-      - 荷兰A | 直连 | 1x
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本 | 直连 | 1x
-      - 新加坡B | 直连 | 1x
-      - 新加坡A | 直连 | 1x
-      - 美国A | 直连 | 0.5x
+      - 日本 | 标准 | 1.5x
+      - 美国C | 标准 | 1x
+      - 新加坡B | 标准 | 1.5x
+      - 新加坡A | 标准 | 1.5x
+      - 香港B | 标准 | 1.5x
+      - Japan 04
+      - 香港A | 标准 | 1.5x
+      - 美国B | 标准 | 1x
+      - 荷兰 | 标准 | 1x
+      - 美国A | 标准 | 1x
+      - 俄罗斯 | 标准 | 1x
       - United States 02
-      - 荷兰B | 直连 | 0.5x
-      - 悉尼 | 直连 | 1x
-      - 美国B | 直连 | 0.5x
-      - 节点失效请更新订阅
-      - 乌克兰 | 直连 | 0.5x
-      - 荷兰A | 直连 | 1x
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 | 直连 | 1x
-      - 新加坡B | 直连 | 1x
-      - 新加坡A | 直连 | 1x
-      - 美国A | 直连 | 0.5x
+      - 日本 | 标准 | 1.5x
+      - 美国C | 标准 | 1x
+      - 新加坡B | 标准 | 1.5x
+      - 新加坡A | 标准 | 1.5x
+      - 香港B | 标准 | 1.5x
+      - Japan 04
+      - 香港A | 标准 | 1.5x
+      - 美国B | 标准 | 1x
+      - 荷兰 | 标准 | 1x
+      - 美国A | 标准 | 1x
+      - 俄罗斯 | 标准 | 1x
       - United States 02
-      - 荷兰B | 直连 | 0.5x
-      - 悉尼 | 直连 | 1x
-      - 美国B | 直连 | 0.5x
-      - 节点失效请更新订阅
-      - 乌克兰 | 直连 | 0.5x
-      - 荷兰A | 直连 | 1x
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,71 +88,77 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 | 直连 | 1x
-      - 新加坡B | 直连 | 1x
-      - 新加坡A | 直连 | 1x
-      - 美国A | 直连 | 0.5x
+      - 日本 | 标准 | 1.5x
+      - 美国C | 标准 | 1x
+      - 新加坡B | 标准 | 1.5x
+      - 新加坡A | 标准 | 1.5x
+      - 香港B | 标准 | 1.5x
+      - Japan 04
+      - 香港A | 标准 | 1.5x
+      - 美国B | 标准 | 1x
+      - 荷兰 | 标准 | 1x
+      - 美国A | 标准 | 1x
+      - 俄罗斯 | 标准 | 1x
       - United States 02
-      - 荷兰B | 直连 | 0.5x
-      - 悉尼 | 直连 | 1x
-      - 美国B | 直连 | 0.5x
-      - 节点失效请更新订阅
-      - 乌克兰 | 直连 | 0.5x
-      - 荷兰A | 直连 | 1x
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港B | 标准 | 1.5x
+      - 香港A | 标准 | 1.5x
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本 | 直连 | 1x
-      - 新加坡B | 直连 | 1x
-      - 新加坡A | 直连 | 1x
-      - 美国A | 直连 | 0.5x
+      - 日本 | 标准 | 1.5x
+      - 美国C | 标准 | 1x
+      - 新加坡B | 标准 | 1.5x
+      - 新加坡A | 标准 | 1.5x
+      - 香港B | 标准 | 1.5x
+      - Japan 04
+      - 香港A | 标准 | 1.5x
+      - 美国B | 标准 | 1x
+      - 荷兰 | 标准 | 1x
+      - 美国A | 标准 | 1x
+      - 俄罗斯 | 标准 | 1x
       - United States 02
-      - 荷兰B | 直连 | 0.5x
-      - 悉尼 | 直连 | 1x
-      - 美国B | 直连 | 0.5x
-      - 节点失效请更新订阅
-      - 乌克兰 | 直连 | 0.5x
-      - 荷兰A | 直连 | 1x
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本 | 直连 | 1x
-      - 新加坡B | 直连 | 1x
-      - 新加坡A | 直连 | 1x
-      - 美国A | 直连 | 0.5x
+      - 日本 | 标准 | 1.5x
+      - 美国C | 标准 | 1x
+      - 新加坡B | 标准 | 1.5x
+      - 新加坡A | 标准 | 1.5x
+      - 香港B | 标准 | 1.5x
+      - Japan 04
+      - 香港A | 标准 | 1.5x
+      - 美国B | 标准 | 1x
+      - 荷兰 | 标准 | 1x
+      - 美国A | 标准 | 1x
+      - 俄罗斯 | 标准 | 1x
       - United States 02
-      - 荷兰B | 直连 | 0.5x
-      - 悉尼 | 直连 | 1x
-      - 美国B | 直连 | 0.5x
-      - 节点失效请更新订阅
-      - 乌克兰 | 直连 | 0.5x
-      - 荷兰A | 直连 | 1x
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 | 直连 | 1x
-      - 新加坡B | 直连 | 1x
-      - 新加坡A | 直连 | 1x
-      - 美国A | 直连 | 0.5x
+      - 日本 | 标准 | 1.5x
+      - 美国C | 标准 | 1x
+      - 新加坡B | 标准 | 1.5x
+      - 新加坡A | 标准 | 1.5x
+      - 香港B | 标准 | 1.5x
+      - Japan 04
+      - 香港A | 标准 | 1.5x
+      - 美国B | 标准 | 1x
+      - 荷兰 | 标准 | 1x
+      - 美国A | 标准 | 1x
+      - 俄罗斯 | 标准 | 1x
       - United States 02
-      - 荷兰B | 直连 | 0.5x
-      - 悉尼 | 直连 | 1x
-      - 美国B | 直连 | 0.5x
-      - 节点失效请更新订阅
-      - 乌克兰 | 直连 | 0.5x
-      - 荷兰A | 直连 | 1x
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -164,17 +174,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 | 直连 | 1x
-      - 新加坡B | 直连 | 1x
-      - 新加坡A | 直连 | 1x
-      - 美国A | 直连 | 0.5x
+      - 日本 | 标准 | 1.5x
+      - 美国C | 标准 | 1x
+      - 新加坡B | 标准 | 1.5x
+      - 新加坡A | 标准 | 1.5x
+      - 香港B | 标准 | 1.5x
+      - Japan 04
+      - 香港A | 标准 | 1.5x
+      - 美国B | 标准 | 1x
+      - 荷兰 | 标准 | 1x
+      - 美国A | 标准 | 1x
+      - 俄罗斯 | 标准 | 1x
       - United States 02
-      - 荷兰B | 直连 | 0.5x
-      - 悉尼 | 直连 | 1x
-      - 美国B | 直连 | 0.5x
-      - 节点失效请更新订阅
-      - 乌克兰 | 直连 | 0.5x
-      - 荷兰A | 直连 | 1x
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
