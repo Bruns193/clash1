@@ -5,59 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡D｜0.2x｜直连, server: sgaws.zzk8.me, port: 59815, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: sgaws.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 韩国C｜0.2x｜直连, server: kraws.zzk8.me, port: 59812, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: kraws.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 日本B｜1x｜流媒体, server: std.zz8.shop, port: 39122, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
-  - {name: 美国B｜1x｜流媒体, server: std.zz8.shop, port: 40666, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: std.zz8.shop, skip-cert-verify: true, udp: true}
-  - {name: 美国D｜0.1x｜直连, server: us2.zzk8.me, port: 59817, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: us2.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 美国E｜0.1x｜直连, server: uska.zzk8.me, port: 59818, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uska.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 韩国A｜2x｜流媒体, server: vip.zz8.shop, port: 39222, type: ss, cipher: chacha20-ietf-poly1305, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, udp: true}
-  - {name: 日本A｜2x｜流媒体, server: vip.zz8.shop, port: 39111, type: ss, cipher: chacha20-ietf-poly1305, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, udp: true}
+  - {name: 韩国｜0.2x｜直连, server: kraws.zzk8.me, port: 59812, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: kraws.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 新加坡｜0.2x｜直连, server: sgaws.zzk8.me, port: 59815, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: sgaws.zzk8.me, skip-cert-verify: true, udp: true}
   - {name: United States 03, server: 165.154.235.49, port: 443, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, skip-cert-verify: true, udp: true}
+  - {name: United States 02, server: 45.137.97.205, port: 443, type: trojan, password: f846b717-c6d3-3791-86c9-c9e747e62156, skip-cert-verify: true, udp: true}
+  - {name: 美国B｜0.1x｜直连, server: uska.zzk8.me, port: 59818, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uska.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 荷兰B｜0.1x｜直连, server: nla.zzk8.me, port: 59819, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: nla.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 美国A｜0.1x｜直连, server: uslsj.zzk8.me, port: 59816, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: uslsj.zzk8.me, skip-cert-verify: true, udp: true}
+  - {name: 荷兰A｜0.1x｜直连, server: nl.zzk8.me, port: 39966, type: trojan, password: a7c2dada-38ac-482e-abbe-a7b0bc10c085, sni: nl.zzk8.me, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡D｜0.2x｜直连
-      - 韩国C｜0.2x｜直连
-      - 日本B｜1x｜流媒体
-      - 美国B｜1x｜流媒体
-      - 美国D｜0.1x｜直连
-      - 美国E｜0.1x｜直连
-      - 韩国A｜2x｜流媒体
-      - 日本A｜2x｜流媒体
+      - 韩国｜0.2x｜直连
+      - 新加坡｜0.2x｜直连
       - United States 03
+      - United States 02
+      - 美国B｜0.1x｜直连
+      - 荷兰B｜0.1x｜直连
+      - 美国A｜0.1x｜直连
+      - 荷兰A｜0.1x｜直连
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡D｜0.2x｜直连
-      - 韩国C｜0.2x｜直连
-      - 日本B｜1x｜流媒体
-      - 美国B｜1x｜流媒体
-      - 美国D｜0.1x｜直连
-      - 美国E｜0.1x｜直连
-      - 韩国A｜2x｜流媒体
-      - 日本A｜2x｜流媒体
+      - 韩国｜0.2x｜直连
+      - 新加坡｜0.2x｜直连
       - United States 03
+      - United States 02
+      - 美国B｜0.1x｜直连
+      - 荷兰B｜0.1x｜直连
+      - 美国A｜0.1x｜直连
+      - 荷兰A｜0.1x｜直连
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡D｜0.2x｜直连
-      - 韩国C｜0.2x｜直连
-      - 日本B｜1x｜流媒体
-      - 美国B｜1x｜流媒体
-      - 美国D｜0.1x｜直连
-      - 美国E｜0.1x｜直连
-      - 韩国A｜2x｜流媒体
-      - 日本A｜2x｜流媒体
+      - 韩国｜0.2x｜直连
+      - 新加坡｜0.2x｜直连
       - United States 03
+      - United States 02
+      - 美国B｜0.1x｜直连
+      - 荷兰B｜0.1x｜直连
+      - 美国A｜0.1x｜直连
+      - 荷兰A｜0.1x｜直连
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,15 +72,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡D｜0.2x｜直连
-      - 韩国C｜0.2x｜直连
-      - 日本B｜1x｜流媒体
-      - 美国B｜1x｜流媒体
-      - 美国D｜0.1x｜直连
-      - 美国E｜0.1x｜直连
-      - 韩国A｜2x｜流媒体
-      - 日本A｜2x｜流媒体
+      - 韩国｜0.2x｜直连
+      - 新加坡｜0.2x｜直连
       - United States 03
+      - United States 02
+      - 美国B｜0.1x｜直连
+      - 荷兰B｜0.1x｜直连
+      - 美国A｜0.1x｜直连
+      - 荷兰A｜0.1x｜直连
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -95,44 +90,41 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡D｜0.2x｜直连
-      - 韩国C｜0.2x｜直连
-      - 日本B｜1x｜流媒体
-      - 美国B｜1x｜流媒体
-      - 美国D｜0.1x｜直连
-      - 美国E｜0.1x｜直连
-      - 韩国A｜2x｜流媒体
-      - 日本A｜2x｜流媒体
+      - 韩国｜0.2x｜直连
+      - 新加坡｜0.2x｜直连
       - United States 03
+      - United States 02
+      - 美国B｜0.1x｜直连
+      - 荷兰B｜0.1x｜直连
+      - 美国A｜0.1x｜直连
+      - 荷兰A｜0.1x｜直连
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡D｜0.2x｜直连
-      - 韩国C｜0.2x｜直连
-      - 日本B｜1x｜流媒体
-      - 美国B｜1x｜流媒体
-      - 美国D｜0.1x｜直连
-      - 美国E｜0.1x｜直连
-      - 韩国A｜2x｜流媒体
-      - 日本A｜2x｜流媒体
+      - 韩国｜0.2x｜直连
+      - 新加坡｜0.2x｜直连
       - United States 03
+      - United States 02
+      - 美国B｜0.1x｜直连
+      - 荷兰B｜0.1x｜直连
+      - 美国A｜0.1x｜直连
+      - 荷兰A｜0.1x｜直连
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡D｜0.2x｜直连
-      - 韩国C｜0.2x｜直连
-      - 日本B｜1x｜流媒体
-      - 美国B｜1x｜流媒体
-      - 美国D｜0.1x｜直连
-      - 美国E｜0.1x｜直连
-      - 韩国A｜2x｜流媒体
-      - 日本A｜2x｜流媒体
+      - 韩国｜0.2x｜直连
+      - 新加坡｜0.2x｜直连
       - United States 03
+      - United States 02
+      - 美国B｜0.1x｜直连
+      - 荷兰B｜0.1x｜直连
+      - 美国A｜0.1x｜直连
+      - 荷兰A｜0.1x｜直连
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡D｜0.2x｜直连
-      - 韩国C｜0.2x｜直连
-      - 日本B｜1x｜流媒体
-      - 美国B｜1x｜流媒体
-      - 美国D｜0.1x｜直连
-      - 美国E｜0.1x｜直连
-      - 韩国A｜2x｜流媒体
-      - 日本A｜2x｜流媒体
+      - 韩国｜0.2x｜直连
+      - 新加坡｜0.2x｜直连
       - United States 03
+      - United States 02
+      - 美国B｜0.1x｜直连
+      - 荷兰B｜0.1x｜直连
+      - 美国A｜0.1x｜直连
+      - 荷兰A｜0.1x｜直连
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
